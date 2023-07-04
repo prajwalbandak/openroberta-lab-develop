@@ -1,0 +1,514 @@
+{"ops": [
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "0"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "numVar",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "value": true
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "boolVar",
+    "type": "BOOLEAN"
+  },
+  {
+    "opc": "expr",
+    "expr": "STRING_CONST",
+    "value": ""
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "stringVar",
+    "type": "STRING"
+  },
+  {
+    "opc": "expr",
+    "expr": "COLOR_CONST",
+    "value": 10
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "colourVar",
+    "type": "COLOR"
+  },
+  {
+    "opc": "returnAddress",
+    "target": "rtn_1"
+  },
+  {
+    "opc": "call",
+    "target": "mthd_s_text"
+  },
+  {
+    "opc": "comment",
+    "text": "call",
+    "label": "rtn_1",
+    "type": "end"
+  },
+  {
+    "opc": "returnAddress",
+    "target": "rtn_2"
+  },
+  {
+    "opc": "call",
+    "target": "mthd_s_colour"
+  },
+  {
+    "opc": "comment",
+    "text": "call",
+    "label": "rtn_2",
+    "type": "end"
+  },
+  {
+    "opc": "returnAddress",
+    "target": "rtn_3"
+  },
+  {
+    "opc": "expr",
+    "name": "numVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "name": "boolVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "name": "stringVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "name": "colourVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "call",
+    "target": "mthd_s_parameters"
+  },
+  {
+    "opc": "comment",
+    "text": "call",
+    "label": "rtn_3",
+    "type": "end"
+  },
+  {
+    "opc": "returnAddress",
+    "target": "rtn_4"
+  },
+  {
+    "opc": "call",
+    "target": "mthd_s_function_return_numberVar"
+  },
+  {
+    "opc": "comment",
+    "text": "call",
+    "label": "rtn_4",
+    "type": "end"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "opc": "returnAddress",
+    "target": "rtn_5"
+  },
+  {
+    "opc": "call",
+    "target": "mthd_s_function_return_booleanVar"
+  },
+  {
+    "opc": "comment",
+    "text": "call",
+    "label": "rtn_5",
+    "type": "end"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "opc": "returnAddress",
+    "target": "rtn_6"
+  },
+  {
+    "opc": "call",
+    "target": "mthd_s_function_return_stringVar"
+  },
+  {
+    "opc": "comment",
+    "text": "call",
+    "label": "rtn_6",
+    "type": "end"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "opc": "returnAddress",
+    "target": "rtn_7"
+  },
+  {
+    "opc": "call",
+    "target": "mthd_s_function_return_colourVar"
+  },
+  {
+    "opc": "comment",
+    "text": "call",
+    "label": "rtn_7",
+    "type": "end"
+  },
+  {"opc": "ShowTextAction"},
+  {"opc": "stop"},
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_s_text",
+    "type": "start"
+  },
+  {
+    "opc": "expr",
+    "expr": "STRING_CONST",
+    "value": ""
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "opc": "comment",
+    "value": ""
+  },
+  {
+    "opc": "expr",
+    "name": "stringVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "name": "stringVar",
+    "expr": "Var"
+  },
+  {
+    "NUMBER": 2,
+    "opc": "createTextJoin"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_e_8",
+    "type": "start"
+  },
+  {
+    "opc": "return",
+    "values": false
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_s_colour",
+    "type": "start"
+  },
+  {
+    "opc": "expr",
+    "expr": "COLOR_CONST",
+    "value": 1
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "colourVar"
+  },
+  {
+    "opc": "expr",
+    "expr": "COLOR_CONST",
+    "value": 2
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "colourVar"
+  },
+  {
+    "opc": "expr",
+    "expr": "COLOR_CONST",
+    "value": 3
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "colourVar"
+  },
+  {
+    "opc": "expr",
+    "expr": "COLOR_CONST",
+    "value": 4
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "colourVar"
+  },
+  {
+    "opc": "expr",
+    "expr": "COLOR_CONST",
+    "value": 5
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "colourVar"
+  },
+  {
+    "opc": "expr",
+    "expr": "COLOR_CONST",
+    "value": 6
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "colourVar"
+  },
+  {
+    "opc": "expr",
+    "expr": "COLOR_CONST",
+    "value": 7
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "colourVar"
+  },
+  {
+    "opc": "expr",
+    "expr": "COLOR_CONST",
+    "value": 8
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "colourVar"
+  },
+  {
+    "opc": "expr",
+    "expr": "COLOR_CONST",
+    "value": 9
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "colourVar"
+  },
+  {
+    "opc": "expr",
+    "expr": "COLOR_CONST",
+    "value": 10
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "colourVar"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_e_9",
+    "type": "start"
+  },
+  {
+    "opc": "return",
+    "values": false
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_s_parameters",
+    "type": "start"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "x4",
+    "type": "COLOR"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "x3",
+    "type": "STRING"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "x2",
+    "type": "BOOLEAN"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "x",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodIfReturn",
+    "type": "start",
+    "n": 10
+  },
+  {
+    "opc": "expr",
+    "name": "boolVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "rtn_11"
+  },
+  {
+    "opc": "expr",
+    "expr": "null"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "mthd_e_10"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodIfReturn",
+    "label": "rtn_11",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_e_10",
+    "type": "start"
+  },
+  {
+    "opc": "unbindVar",
+    "name": "x"
+  },
+  {
+    "opc": "unbindVar",
+    "name": "x2"
+  },
+  {
+    "opc": "unbindVar",
+    "name": "x3"
+  },
+  {
+    "opc": "unbindVar",
+    "name": "x4"
+  },
+  {
+    "opc": "return",
+    "values": false
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodReturn",
+    "label": "mthd_s_function_return_numberVar",
+    "type": "start"
+  },
+  {
+    "opc": "expr",
+    "name": "numVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_e_12",
+    "type": "start"
+  },
+  {
+    "opc": "return",
+    "values": true
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodReturn",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodReturn",
+    "label": "mthd_s_function_return_booleanVar",
+    "type": "start"
+  },
+  {
+    "opc": "expr",
+    "name": "boolVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_e_13",
+    "type": "start"
+  },
+  {
+    "opc": "return",
+    "values": true
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodReturn",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodReturn",
+    "label": "mthd_s_function_return_stringVar",
+    "type": "start"
+  },
+  {
+    "opc": "expr",
+    "name": "stringVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_e_14",
+    "type": "start"
+  },
+  {
+    "opc": "return",
+    "values": true
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodReturn",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodReturn",
+    "label": "mthd_s_function_return_colourVar",
+    "type": "start"
+  },
+  {
+    "opc": "expr",
+    "name": "colourVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_e_15",
+    "type": "start"
+  },
+  {
+    "opc": "return",
+    "values": true
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodReturn",
+    "type": "end"
+  }
+]}

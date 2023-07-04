@@ -1,0 +1,383 @@
+{"ops": [
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "0"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "n1",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "value": false
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "b",
+    "type": "BOOLEAN"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "n2",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "4"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "n3",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "comment",
+    "value": "Basic Functions START"
+  },
+  {
+    "opc": "returnAddress",
+    "target": "rtn_1"
+  },
+  {
+    "opc": "call",
+    "target": "mthd_s_number"
+  },
+  {
+    "opc": "comment",
+    "text": "call",
+    "label": "rtn_1",
+    "type": "end"
+  },
+  {
+    "opc": "returnAddress",
+    "target": "rtn_2"
+  },
+  {
+    "opc": "call",
+    "target": "mthd_s_breakFunct"
+  },
+  {
+    "opc": "comment",
+    "text": "call",
+    "label": "rtn_2",
+    "type": "end"
+  },
+  {
+    "opc": "returnAddress",
+    "target": "rtn_3"
+  },
+  {
+    "opc": "call",
+    "target": "mthd_s_retNumber"
+  },
+  {
+    "opc": "comment",
+    "text": "call",
+    "label": "rtn_3",
+    "type": "end"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "n1"
+  },
+  {
+    "opc": "returnAddress",
+    "target": "rtn_4"
+  },
+  {
+    "opc": "call",
+    "target": "mthd_s_retBool"
+  },
+  {
+    "opc": "comment",
+    "text": "call",
+    "label": "rtn_4",
+    "type": "end"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "b"
+  },
+  {
+    "opc": "returnAddress",
+    "target": "rtn_5"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "10"
+  },
+  {
+    "opc": "call",
+    "target": "mthd_s_retNumber2"
+  },
+  {
+    "opc": "comment",
+    "text": "call",
+    "label": "rtn_5",
+    "type": "end"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "n1"
+  },
+  {
+    "opc": "comment",
+    "value": "Basic Functions END"
+  },
+  {"opc": "stop"},
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_s_number",
+    "type": "start"
+  },
+  {
+    "opc": "expr",
+    "name": "n2",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "name": "n3",
+    "expr": "Var"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "n1"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_e_6",
+    "type": "start"
+  },
+  {
+    "opc": "return",
+    "values": false
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_s_breakFunct",
+    "type": "start"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodIfReturn",
+    "type": "start",
+    "n": 7
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "5"
+  },
+  {
+    "opc": "expr",
+    "name": "n1",
+    "expr": "Var"
+  },
+  {
+    "op": "EQ",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "rtn_8"
+  },
+  {
+    "opc": "expr",
+    "expr": "null"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "mthd_e_7"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodIfReturn",
+    "label": "rtn_8",
+    "type": "end"
+  },
+  {
+    "opc": "expr",
+    "name": "n1",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1000"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "n1"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_e_7",
+    "type": "start"
+  },
+  {
+    "opc": "return",
+    "values": false
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodReturn",
+    "label": "mthd_s_retBool",
+    "type": "start"
+  },
+  {
+    "opc": "expr",
+    "name": "n1",
+    "expr": "Var"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "n1"
+  },
+  {
+    "opc": "expr",
+    "name": "b",
+    "expr": "Var"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_e_9",
+    "type": "start"
+  },
+  {
+    "opc": "return",
+    "values": true
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodReturn",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodReturn",
+    "label": "mthd_s_retNumber",
+    "type": "start"
+  },
+  {
+    "opc": "expr",
+    "name": "n1",
+    "expr": "Var"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "n1"
+  },
+  {
+    "opc": "expr",
+    "name": "n1",
+    "expr": "Var"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_e_10",
+    "type": "start"
+  },
+  {
+    "opc": "return",
+    "values": true
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodReturn",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodReturn",
+    "label": "mthd_s_retNumber2",
+    "type": "start"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "x",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "expr",
+    "name": "x",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "2"
+  },
+  {
+    "op": "DIVIDE",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "x"
+  },
+  {
+    "opc": "expr",
+    "name": "x",
+    "expr": "Var"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_e_11",
+    "type": "start"
+  },
+  {
+    "opc": "unbindVar",
+    "name": "x"
+  },
+  {
+    "opc": "return",
+    "values": true
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodReturn",
+    "type": "end"
+  }
+]}

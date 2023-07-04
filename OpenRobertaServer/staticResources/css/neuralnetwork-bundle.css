@@ -1,0 +1,314 @@
+#nn {
+    width: 100%;
+    height: 100%;
+}
+
+#nn .nn-middle-size {
+    font-size: 20px;
+}
+
+#nn .nn-bold {
+    font-weight: bold;
+}
+
+#nn .nn-large-size {
+    font-size: 28px;
+}
+
+#nn-top-controls {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    background: white;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+#nn-top-controls .nn-control {
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+#nn-show-math-all.nn-control {
+    flex: 30%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30%;
+}
+
+#nn-top-controls .nn-control .label {
+    color: #777;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 300;
+}
+
+#nn-top-controls .nn-control .value {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 300;
+}
+
+#nn-top-controls .nn-control .select {
+    position: relative;
+}
+
+#goto-sim {
+    position: absolute;
+    min-height: 48px;
+    max-width: 48px;
+    min-width: 48px;
+    right: 10px;
+    bottom: 10px;
+    font-size: 36px;
+    background-color: #ffffff;
+    color: #333333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 2px 0 0 0;
+    margin: 0;
+    z-index: 9999;
+}
+
+#goto-sim:hover {
+    background-color: #BACC1E;
+}
+
+.nn-selection {
+    min-height: 36px;
+    border: none;
+    border-radius: 2px;
+    background-color: #23b6ac;
+    color: #ffffff;
+    padding: 6px;
+}
+
+#nn-show-math {
+    background-color: #f0f0f0;
+    min-height: 36px;
+    padding: 6px;
+    border-radius: 2px;
+}
+
+#nn-main-part {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-top: 2px;
+    position: relative;
+}
+
+#nn-main-part .output .mdl-checkbox__label.label {
+    line-height: 1.7em;
+}
+
+#nn-features {
+    width: 10%;
+    position: relative;
+}
+
+#nn-features .nn-plus-minus-neurons {
+    position: absolute;
+    line-height: 28px;
+    top: -58px;
+    width: 120px;
+    height: 44px;
+}
+
+button.nn-btn {
+    background-color: #23b6ac;
+    width: 36px;
+    height: 36px;
+    border-radius: 2px;
+    padding: 0;
+    font-size: 20px;
+    margin-right: inherit;
+    border: none;
+    color: #ffffff;
+}
+
+button#nn-type-plus, button#nn-type-minus, button#nn-type-finished, button#nn-name-finished {
+    width: 27px;
+    height: 27px;
+}
+
+#nn-features .nn-plus-minus-neuron-button.active-input {
+    background-color: #BACC1E;
+}
+
+#nn-features .nn-plus-minus-neuron-button.active-output {
+    background-color: #f29400;
+}
+
+
+button.nn-btn:hover {
+    background-color: #ade7e4;
+}
+
+.nn-selection option {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+#nn-top-controls .nn-num-layers-group {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+#nn-features .nn-plus-minus-neurons .nn-plus-minus-neuron-button {
+    margin-right: 4px;
+}
+
+#nn-features svg .main-label {
+    font-size: 13px;
+    fill: #333;
+    font-weight: 300;
+}
+
+#nn-features .nn-showval {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-anchor: end;
+    cursor: pointer;
+}
+
+#nn-features svg #markerArrow {
+    fill: black;
+    stroke: black;
+    stroke-opacity: 0.2;
+}
+
+#nn-features .node_input rect {
+    cursor: default;
+    fill: rgb(143, 164, 2);
+}
+
+#nn-features .node_hidden rect {
+    cursor: default;
+    fill: lightgrey;
+}
+
+#nn-features .node_output rect {
+    cursor: default;
+    fill: rgb(242, 148, 0);
+}
+
+#nn-features .core .link {
+    stroke-dasharray: 9 1;
+    stroke-dashoffset: 1;
+    /* webkit-animation: 0.5s linear 0s infinite flowing; */
+}
+
+/** Invisible thick links used for showing weight values on mouse click. */
+#nn-features .core .nn-weight-click {
+    stroke-width: 14;
+    stroke: black;
+    fill: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#nn-features .core .nn-weight-show-click {
+    stroke-width: 14;
+    stroke: gray;
+    fill: none;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+#nn-features .core .nn-bias-click {
+    cursor: pointer;
+}
+
+#nn-features .canvas canvas {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    border: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#nn-network {
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+#nn-editCard {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    border: 1px solid #aaa;
+    z-index: 10;
+    background: #fff;
+    cursor: default;
+    border-radius: 5px;
+    left: 240px;
+}
+
+#nn-nameCard {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    border: 1px solid #aaa;
+    z-index: 10;
+    background: #fff;
+    cursor: default;
+    border-radius: 5px;
+    left: 240px;
+}
+
+#nn-name-message {
+    border: 12px 4px 4px 4px;
+    background: #fff;
+    color: #333;
+}
+
+
+.nn-type-button {
+    position: relative;
+    top: 5px;
+}
+
+.nn-type {
+    height: 40px;
+    style: "font-size: 14px"
+}
+
+canvas {
+    display: block;
+}
+
+.link {
+    fill: none;
+    stroke: #aaa;
+    stroke-width: 1;
+}
+
+g.column rect {
+    stroke: none;
+}
+
+@-webkit-keyframes flowing {
+    from {
+        stroke-dashoffset: 0;
+    }
+    to {
+        stroke-dashoffset: -10;
+    }
+}

@@ -1,0 +1,1072 @@
+{"ops": [
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "0"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "x",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "y",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "comment",
+    "value": "Control Flow Loop -- Start"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "type": "start",
+    "n": 1
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "0"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "k0",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_l_1"
+  },
+  {
+    "opc": "expr",
+    "name": "k0",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "5"
+  },
+  {
+    "op": "LT",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "r_e_1"
+  },
+  {
+    "opc": "expr",
+    "name": "x",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "x"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_c_1"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "opc": "expr",
+    "name": "k0",
+    "expr": "Var"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "k0"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "r_l_1"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_e_1"
+  },
+  {
+    "opc": "unbindVar",
+    "name": "k0"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_l_2",
+    "type": "start"
+  },
+  {
+    "opc": "expr",
+    "name": "x",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "10"
+  },
+  {
+    "op": "EQ",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "op": "NOT",
+    "opc": "expr",
+    "expr": "Unary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "r_e_2"
+  },
+  {
+    "opc": "expr",
+    "name": "x",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "x"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "r_l_2"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_e_2",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_l_3",
+    "type": "start"
+  },
+  {
+    "opc": "expr",
+    "name": "x",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "15"
+  },
+  {
+    "op": "LT",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "r_e_3"
+  },
+  {
+    "opc": "expr",
+    "name": "x",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "x"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "r_l_3"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_e_3",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "type": "start",
+    "n": 4
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "i",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_l_4"
+  },
+  {
+    "opc": "expr",
+    "name": "i",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "6"
+  },
+  {
+    "op": "LT",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "r_e_4"
+  },
+  {
+    "opc": "expr",
+    "name": "x",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "x"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_c_4"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "opc": "expr",
+    "name": "i",
+    "expr": "Var"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "i"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "r_l_4"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_e_4"
+  },
+  {
+    "opc": "unbindVar",
+    "name": "i"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "type": "start",
+    "n": 5
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "2"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "j",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_l_5"
+  },
+  {
+    "opc": "expr",
+    "name": "j",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "5"
+  },
+  {
+    "op": "LT",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "r_e_5"
+  },
+  {
+    "opc": "expr",
+    "name": "x",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "x"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_c_5"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "3"
+  },
+  {
+    "opc": "expr",
+    "name": "j",
+    "expr": "Var"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "j"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "r_l_5"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_e_5"
+  },
+  {
+    "opc": "unbindVar",
+    "name": "j"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "type": "start",
+    "n": 6
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "2"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "k",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_l_6"
+  },
+  {
+    "opc": "expr",
+    "name": "k",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "6"
+  },
+  {
+    "op": "LT",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "r_e_6"
+  },
+  {
+    "opc": "expr",
+    "name": "x",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "x"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_c_6"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "3"
+  },
+  {
+    "opc": "expr",
+    "name": "k",
+    "expr": "Var"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "k"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "r_l_6"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_e_6"
+  },
+  {
+    "opc": "unbindVar",
+    "name": "k"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "type": "start",
+    "n": 7
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "2"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "o",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_l_7"
+  },
+  {
+    "opc": "expr",
+    "name": "o",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "7"
+  },
+  {
+    "op": "LT",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "r_e_7"
+  },
+  {
+    "opc": "expr",
+    "name": "x",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "x"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_c_7"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "3"
+  },
+  {
+    "opc": "expr",
+    "name": "o",
+    "expr": "Var"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "o"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "r_l_7"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_e_7"
+  },
+  {
+    "opc": "unbindVar",
+    "name": "o"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "type": "start",
+    "n": 8
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "10"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "p",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_l_8"
+  },
+  {
+    "opc": "expr",
+    "name": "p",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "9"
+  },
+  {
+    "op": "LT",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "r_e_8"
+  },
+  {
+    "opc": "expr",
+    "name": "x",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "x"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_c_8"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "-1"
+  },
+  {
+    "opc": "expr",
+    "name": "p",
+    "expr": "Var"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "p"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "r_l_8"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_e_8"
+  },
+  {
+    "opc": "unbindVar",
+    "name": "p"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "type": "start",
+    "n": 9
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "m",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_l_9"
+  },
+  {
+    "opc": "expr",
+    "name": "m",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "5"
+  },
+  {
+    "op": "LT",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "r_e_9"
+  },
+  {
+    "opc": "expr",
+    "name": "y",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "y"
+  },
+  {
+    "opc": "expr",
+    "name": "x",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "x"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_c_9"
+  },
+  {
+    "opc": "expr",
+    "name": "y",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "name": "m",
+    "expr": "Var"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "m"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "r_l_9"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_e_9"
+  },
+  {
+    "opc": "unbindVar",
+    "name": "m"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_s_10",
+    "type": "start"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_l_10"
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "type": "start",
+    "n": 11
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "label": "i_0_11"
+  },
+  {
+    "opc": "expr",
+    "name": "x",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "30"
+  },
+  {
+    "op": "LT",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "i_1_11"
+  },
+  {
+    "opc": "expr",
+    "name": "x",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "x"
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "type": "start",
+    "n": 12
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "label": "i_0_12"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "value": true
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "i_1_12"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "r_l_10"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "i_e_12"
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "label": "i_1_12"
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "label": "i_e_12",
+    "type": "end"
+  },
+  {
+    "opc": "expr",
+    "name": "x",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1000"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "x"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "i_e_11"
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "label": "i_1_11"
+  },
+  {
+    "opc": "expr",
+    "name": "x",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "30"
+  },
+  {
+    "op": "GTE",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "i_2_11"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "r_e_10"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "i_e_11"
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "label": "i_2_11"
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "label": "i_e_11",
+    "type": "end"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "r_s_10"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_e_10",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "value": "Control Flow Loop -- End"
+  },
+  {"opc": "stop"}
+]}

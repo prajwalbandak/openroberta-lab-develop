@@ -1,0 +1,728 @@
+{"ops": [
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "0"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "numVar",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "value": true
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "boolVar",
+    "type": "BOOLEAN"
+  },
+  {
+    "opc": "expr",
+    "expr": "STRING_CONST",
+    "value": ""
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "stringVar",
+    "type": "STRING"
+  },
+  {
+    "opc": "expr",
+    "expr": "COLOR_CONST",
+    "value": 10
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "colourVar",
+    "type": "COLOR"
+  },
+  {
+    "opc": "returnAddress",
+    "target": "rtn_1"
+  },
+  {
+    "opc": "call",
+    "target": "mthd_s_sensors"
+  },
+  {
+    "opc": "comment",
+    "text": "call",
+    "label": "rtn_1",
+    "type": "end"
+  },
+  {
+    "opc": "returnAddress",
+    "target": "rtn_2"
+  },
+  {
+    "opc": "call",
+    "target": "mthd_s_waitUntil"
+  },
+  {
+    "opc": "comment",
+    "text": "call",
+    "label": "rtn_2",
+    "type": "end"
+  },
+  {"opc": "stop"},
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_s_sensors",
+    "type": "start"
+  },
+  {
+    "GetSample": "buttons",
+    "opc": "GetSample",
+    "name": "W"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "GetSample": "gyro",
+    "mode": "UP",
+    "opc": "GetSample",
+    "port": "1",
+    "name": "W"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "GetSample": "gyro",
+    "mode": "DOWN",
+    "opc": "GetSample",
+    "port": "1",
+    "name": "W"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "GetSample": "gyro",
+    "mode": "BACK",
+    "opc": "GetSample",
+    "port": "1",
+    "name": "W"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "GetSample": "gyro",
+    "mode": "FRONT",
+    "opc": "GetSample",
+    "port": "1",
+    "name": "W"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "GetSample": "gyro",
+    "mode": "NO",
+    "opc": "GetSample",
+    "port": "1",
+    "name": "W"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "GetSample": "gyro",
+    "mode": "ANY",
+    "opc": "GetSample",
+    "port": "1",
+    "name": "W"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "GetSample": "infrared",
+    "opc": "GetSample",
+    "port": "2",
+    "name": "W"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "GetSample": "timer",
+    "opc": "GetSample",
+    "port": "1"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "opc": "createResetTimer",
+    "port": "1"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_e_3",
+    "type": "start"
+  },
+  {
+    "opc": "return",
+    "values": false
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_s_waitUntil",
+    "type": "start"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_s_5",
+    "type": "start",
+    "n": 5
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_0_5"
+  },
+  {
+    "GetSample": "buttons",
+    "opc": "GetSample",
+    "name": "W"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "value": true
+  },
+  {
+    "op": "EQ",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "w_1_5"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_e_5"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_1_5"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": 1
+  },
+  {"opc": "WaitTimeSTMT"},
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_s_5"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_e_5",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_s_6",
+    "type": "start",
+    "n": 6
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_0_6"
+  },
+  {
+    "GetSample": "gyro",
+    "mode": "UP",
+    "opc": "GetSample",
+    "port": "1",
+    "name": "W"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "value": true
+  },
+  {
+    "op": "EQ",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "w_1_6"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_e_6"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_1_6"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": 1
+  },
+  {"opc": "WaitTimeSTMT"},
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_s_6"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_e_6",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_s_7",
+    "type": "start",
+    "n": 7
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_0_7"
+  },
+  {
+    "GetSample": "gyro",
+    "mode": "DOWN",
+    "opc": "GetSample",
+    "port": "1",
+    "name": "W"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "value": true
+  },
+  {
+    "op": "EQ",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "w_1_7"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_e_7"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_1_7"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": 1
+  },
+  {"opc": "WaitTimeSTMT"},
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_s_7"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_e_7",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_s_8",
+    "type": "start",
+    "n": 8
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_0_8"
+  },
+  {
+    "GetSample": "gyro",
+    "mode": "BACK",
+    "opc": "GetSample",
+    "port": "1",
+    "name": "W"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "value": true
+  },
+  {
+    "op": "EQ",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "w_1_8"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_e_8"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_1_8"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": 1
+  },
+  {"opc": "WaitTimeSTMT"},
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_s_8"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_e_8",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_s_9",
+    "type": "start",
+    "n": 9
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_0_9"
+  },
+  {
+    "GetSample": "gyro",
+    "mode": "FRONT",
+    "opc": "GetSample",
+    "port": "1",
+    "name": "W"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "value": true
+  },
+  {
+    "op": "EQ",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "w_1_9"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_e_9"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_1_9"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": 1
+  },
+  {"opc": "WaitTimeSTMT"},
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_s_9"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_e_9",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_s_10",
+    "type": "start",
+    "n": 10
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_0_10"
+  },
+  {
+    "GetSample": "gyro",
+    "mode": "NO",
+    "opc": "GetSample",
+    "port": "1",
+    "name": "W"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "value": true
+  },
+  {
+    "op": "EQ",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "w_1_10"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_e_10"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_1_10"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": 1
+  },
+  {"opc": "WaitTimeSTMT"},
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_s_10"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_e_10",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_s_11",
+    "type": "start",
+    "n": 11
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_0_11"
+  },
+  {
+    "GetSample": "gyro",
+    "mode": "ANY",
+    "opc": "GetSample",
+    "port": "1",
+    "name": "W"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "value": true
+  },
+  {
+    "op": "EQ",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "w_1_11"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_e_11"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_1_11"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": 1
+  },
+  {"opc": "WaitTimeSTMT"},
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_s_11"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_e_11",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_s_12",
+    "type": "start",
+    "n": 12
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_0_12"
+  },
+  {
+    "GetSample": "infrared",
+    "opc": "GetSample",
+    "port": "2",
+    "name": "W"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "10"
+  },
+  {
+    "op": "LT",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "w_1_12"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_e_12"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_1_12"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": 1
+  },
+  {"opc": "WaitTimeSTMT"},
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_s_12"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_e_12",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_s_13",
+    "type": "start",
+    "n": 13
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_0_13"
+  },
+  {
+    "GetSample": "timer",
+    "opc": "GetSample",
+    "port": "1"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "500"
+  },
+  {
+    "op": "GT",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "w_1_13"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_e_13"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_1_13"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": 1
+  },
+  {"opc": "WaitTimeSTMT"},
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_s_13"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_e_13",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_e_4",
+    "type": "start"
+  },
+  {
+    "opc": "return",
+    "values": false
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "type": "end"
+  }
+]}

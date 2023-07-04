@@ -1,0 +1,665 @@
+{"ops": [
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "0"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "r1",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "0"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "r2",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "value": true
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "b1",
+    "type": "BOOLEAN"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "0"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "r3",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "value": true
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "sim",
+    "type": "BOOLEAN"
+  },
+  {
+    "opc": "comment",
+    "text": "ternary",
+    "type": "start",
+    "n": 1
+  },
+  {
+    "opc": "expr",
+    "name": "sim",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "t_m_1"
+  },
+  {
+    "opc": "expr",
+    "expr": "createMathConstant",
+    "value": "PI"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "2"
+  },
+  {
+    "op": "DIVIDE",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "t_e_1"
+  },
+  {
+    "opc": "comment",
+    "text": "ternary",
+    "label": "t_m_1"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "90"
+  },
+  {
+    "opc": "comment",
+    "text": "ternary",
+    "label": "t_e_1",
+    "type": "end"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "r3"
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "type": "start",
+    "n": 2
+  },
+  {
+    "opc": "expr",
+    "name": "b1",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "b_m_2"
+  },
+  {
+    "opc": "expr",
+    "name": "r3",
+    "expr": "Var"
+  },
+  {
+    "op": "SIN",
+    "opc": "expr",
+    "expr": "SingleFunction"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "op": "EQ",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "b_e_2"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "label": "b_m_2",
+    "value": false
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "label": "b_e_2",
+    "type": "end"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "b1"
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "type": "start",
+    "n": 3
+  },
+  {
+    "opc": "expr",
+    "name": "b1",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "b_m_3"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "0"
+  },
+  {
+    "op": "COS",
+    "opc": "expr",
+    "expr": "SingleFunction"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "op": "EQ",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "b_e_3"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "label": "b_m_3",
+    "value": false
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "label": "b_e_3",
+    "type": "end"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "b1"
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "type": "start",
+    "n": 4
+  },
+  {
+    "opc": "expr",
+    "name": "b1",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "b_m_4"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "0"
+  },
+  {
+    "op": "TAN",
+    "opc": "expr",
+    "expr": "SingleFunction"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "0"
+  },
+  {
+    "op": "EQ",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "b_e_4"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "label": "b_m_4",
+    "value": false
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "label": "b_e_4",
+    "type": "end"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "b1"
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "type": "start",
+    "n": 5
+  },
+  {
+    "opc": "expr",
+    "name": "b1",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "b_m_5"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "op": "ASIN",
+    "opc": "expr",
+    "expr": "SingleFunction"
+  },
+  {
+    "opc": "expr",
+    "name": "r3",
+    "expr": "Var"
+  },
+  {
+    "op": "EQ",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "b_e_5"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "label": "b_m_5",
+    "value": false
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "label": "b_e_5",
+    "type": "end"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "b1"
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "type": "start",
+    "n": 6
+  },
+  {
+    "opc": "expr",
+    "name": "b1",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "b_m_6"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "op": "ACOS",
+    "opc": "expr",
+    "expr": "SingleFunction"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "0"
+  },
+  {
+    "op": "EQ",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "b_e_6"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "label": "b_m_6",
+    "value": false
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "label": "b_e_6",
+    "type": "end"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "b1"
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "type": "start",
+    "n": 7
+  },
+  {
+    "opc": "expr",
+    "name": "b1",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "b_m_7"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "0"
+  },
+  {
+    "op": "ATAN",
+    "opc": "expr",
+    "expr": "SingleFunction"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "0"
+  },
+  {
+    "op": "EQ",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "b_e_7"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "label": "b_m_7",
+    "value": false
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "label": "b_e_7",
+    "type": "end"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "b1"
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "type": "start",
+    "n": 8
+  },
+  {
+    "opc": "expr",
+    "name": "b1",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "b_m_8"
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "type": "start",
+    "n": 9
+  },
+  {
+    "opc": "expr",
+    "expr": "createMathConstant",
+    "value": "E"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "2.6"
+  },
+  {
+    "op": "GT",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "b_m_9"
+  },
+  {
+    "opc": "expr",
+    "expr": "createMathConstant",
+    "value": "E"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "2.8"
+  },
+  {
+    "op": "LT",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "b_e_9"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "label": "b_m_9",
+    "value": false
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "label": "b_e_9",
+    "type": "end"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "b_e_8"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "label": "b_m_8",
+    "value": false
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "label": "b_e_8",
+    "type": "end"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "b1"
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "type": "start",
+    "n": 10
+  },
+  {
+    "opc": "expr",
+    "name": "b1",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "b_m_10"
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "type": "start",
+    "n": 11
+  },
+  {
+    "opc": "expr",
+    "expr": "createMathConstant",
+    "value": "SQRT2"
+  },
+  {
+    "opc": "expr",
+    "expr": "createMathConstant",
+    "value": "SQRT1_2"
+  },
+  {
+    "op": "MULTIPLY",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "0.999"
+  },
+  {
+    "op": "GTE",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "b_m_11"
+  },
+  {
+    "opc": "expr",
+    "expr": "createMathConstant",
+    "value": "SQRT2"
+  },
+  {
+    "opc": "expr",
+    "expr": "createMathConstant",
+    "value": "SQRT1_2"
+  },
+  {
+    "op": "MULTIPLY",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1.001"
+  },
+  {
+    "op": "LTE",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "b_e_11"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "label": "b_m_11",
+    "value": false
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "label": "b_e_11",
+    "type": "end"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "b_e_10"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "label": "b_m_10",
+    "value": false
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "label": "b_e_10",
+    "type": "end"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "b1"
+  },
+  {
+    "opc": "comment",
+    "value": "if b1 is true, the test succeeded, otherwise it failed"
+  },
+  {"opc": "stop"}
+]}

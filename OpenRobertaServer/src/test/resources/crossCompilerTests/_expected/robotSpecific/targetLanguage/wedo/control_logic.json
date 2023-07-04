@@ -1,0 +1,1046 @@
+{"ops": [
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "0"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "numVar",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "value": true
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "boolVar",
+    "type": "BOOLEAN"
+  },
+  {
+    "opc": "expr",
+    "expr": "STRING_CONST",
+    "value": ""
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "stringVar",
+    "type": "STRING"
+  },
+  {
+    "opc": "expr",
+    "expr": "COLOR_CONST",
+    "value": 10
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "colourVar",
+    "type": "COLOR"
+  },
+  {
+    "opc": "returnAddress",
+    "target": "rtn_1"
+  },
+  {
+    "opc": "call",
+    "target": "mthd_s_control"
+  },
+  {
+    "opc": "comment",
+    "text": "call",
+    "label": "rtn_1",
+    "type": "end"
+  },
+  {
+    "opc": "returnAddress",
+    "target": "rtn_2"
+  },
+  {
+    "opc": "call",
+    "target": "mthd_s_logic"
+  },
+  {
+    "opc": "comment",
+    "text": "call",
+    "label": "rtn_2",
+    "type": "end"
+  },
+  {"opc": "stop"},
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_s_control",
+    "type": "start"
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "type": "start",
+    "n": 4
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "label": "i_0_4"
+  },
+  {
+    "opc": "expr",
+    "name": "boolVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "i_1_4"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "i_e_4"
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "label": "i_1_4"
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "label": "i_e_4",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "type": "start",
+    "n": 5
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "label": "i_0_5"
+  },
+  {
+    "opc": "expr",
+    "name": "boolVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "i_1_5"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "i_e_5"
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "label": "i_1_5"
+  },
+  {
+    "opc": "expr",
+    "name": "boolVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "i_2_5"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "i_e_5"
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "label": "i_2_5"
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "label": "i_e_5",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "type": "start",
+    "n": 6
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "label": "i_0_6"
+  },
+  {
+    "opc": "expr",
+    "name": "boolVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "i_1_6"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "i_e_6"
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "label": "i_1_6"
+  },
+  {
+    "opc": "comment",
+    "text": "IfStatement",
+    "label": "i_e_6",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_l_7",
+    "type": "start"
+  },
+  {
+    "opc": "expr",
+    "name": "boolVar",
+    "expr": "Var"
+  },
+  {
+    "op": "NOT",
+    "opc": "expr",
+    "expr": "Unary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "r_e_7"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "r_e_7"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "r_l_7"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_e_7",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_l_8",
+    "type": "start"
+  },
+  {
+    "opc": "expr",
+    "name": "boolVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "r_e_8"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "r_l_8"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "r_l_8"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_e_8",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "type": "start",
+    "n": 9
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "0"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "k0",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_l_9"
+  },
+  {
+    "opc": "expr",
+    "name": "k0",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "name": "numVar",
+    "expr": "Var"
+  },
+  {
+    "op": "LT",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "r_e_9"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_c_9"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "1"
+  },
+  {
+    "opc": "expr",
+    "name": "k0",
+    "expr": "Var"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "k0"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "r_l_9"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_e_9"
+  },
+  {
+    "opc": "unbindVar",
+    "name": "k0"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "type": "start",
+    "n": 10
+  },
+  {
+    "opc": "expr",
+    "name": "numVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "VarDeclaration",
+    "name": "i",
+    "type": "NUMBER"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_l_10"
+  },
+  {
+    "opc": "expr",
+    "name": "i",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "name": "numVar",
+    "expr": "Var"
+  },
+  {
+    "op": "LT",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "r_e_10"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_c_10"
+  },
+  {
+    "opc": "expr",
+    "name": "numVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "name": "i",
+    "expr": "Var"
+  },
+  {
+    "op": "ADD",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "AssignStmt",
+    "name": "i"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "r_l_10"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "label": "r_e_10"
+  },
+  {
+    "opc": "unbindVar",
+    "name": "i"
+  },
+  {
+    "opc": "comment",
+    "text": "RepeatStmt",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_s_11",
+    "type": "start",
+    "n": 11
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_0_11"
+  },
+  {
+    "opc": "expr",
+    "name": "boolVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "w_1_11"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_e_11"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_1_11"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": 1
+  },
+  {"opc": "WaitTimeSTMT"},
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_s_11"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_e_11",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_s_12",
+    "type": "start",
+    "n": 12
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_0_12"
+  },
+  {
+    "opc": "expr",
+    "name": "boolVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "w_1_12"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_e_12"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_1_12"
+  },
+  {
+    "opc": "expr",
+    "name": "boolVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "w_2_12"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_e_12"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_2_12"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": 1
+  },
+  {"opc": "WaitTimeSTMT"},
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_s_12"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_e_12",
+    "type": "end"
+  },
+  {
+    "opc": "expr",
+    "name": "numVar",
+    "expr": "Var"
+  },
+  {"opc": "WaitTimeSTMT"},
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_s_13",
+    "type": "start",
+    "n": 13
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_0_13"
+  },
+  {
+    "GetSample": "buttons",
+    "opc": "GetSample",
+    "name": "W"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "value": true
+  },
+  {
+    "op": "EQ",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "w_1_13"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_e_13"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_1_13"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": 1
+  },
+  {"opc": "WaitTimeSTMT"},
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_s_13"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_e_13",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_s_14",
+    "type": "start",
+    "n": 14
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_0_14"
+  },
+  {
+    "GetSample": "gyro",
+    "mode": "UP",
+    "opc": "GetSample",
+    "port": "1",
+    "name": "W"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "value": true
+  },
+  {
+    "op": "EQ",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "w_1_14"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_e_14"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_1_14"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": 1
+  },
+  {"opc": "WaitTimeSTMT"},
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_s_14"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_e_14",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_s_15",
+    "type": "start",
+    "n": 15
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_0_15"
+  },
+  {
+    "GetSample": "infrared",
+    "opc": "GetSample",
+    "port": "2",
+    "name": "W"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "10"
+  },
+  {
+    "op": "LT",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "w_1_15"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_e_15"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_1_15"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": 1
+  },
+  {"opc": "WaitTimeSTMT"},
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_s_15"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_e_15",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_s_16",
+    "type": "start",
+    "n": 16
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_0_16"
+  },
+  {
+    "GetSample": "timer",
+    "opc": "GetSample",
+    "port": "1"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": "500"
+  },
+  {
+    "op": "GT",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "w_1_16"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_e_16"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_1_16"
+  },
+  {
+    "opc": "expr",
+    "expr": "NUM_CONST",
+    "value": 1
+  },
+  {"opc": "WaitTimeSTMT"},
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "w_s_16"
+  },
+  {
+    "opc": "comment",
+    "text": "WaitStmt",
+    "label": "w_e_16",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_e_3",
+    "type": "start"
+  },
+  {
+    "opc": "return",
+    "values": false
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "type": "end"
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_s_logic",
+    "type": "start"
+  },
+  {
+    "opc": "expr",
+    "name": "numVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "name": "numVar",
+    "expr": "Var"
+  },
+  {
+    "op": "EQ",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "opc": "expr",
+    "name": "numVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "name": "numVar",
+    "expr": "Var"
+  },
+  {
+    "op": "NEQ",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "opc": "expr",
+    "name": "numVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "name": "numVar",
+    "expr": "Var"
+  },
+  {
+    "op": "LT",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "opc": "expr",
+    "name": "numVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "name": "numVar",
+    "expr": "Var"
+  },
+  {
+    "op": "LTE",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "opc": "expr",
+    "name": "numVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "name": "numVar",
+    "expr": "Var"
+  },
+  {
+    "op": "GT",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "opc": "expr",
+    "name": "numVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "expr",
+    "name": "numVar",
+    "expr": "Var"
+  },
+  {
+    "op": "GTE",
+    "opc": "expr",
+    "expr": "Binary"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "type": "start",
+    "n": 18
+  },
+  {
+    "opc": "expr",
+    "name": "boolVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": false,
+    "target": "b_m_18"
+  },
+  {
+    "opc": "expr",
+    "name": "boolVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "b_e_18"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "label": "b_m_18",
+    "value": false
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "label": "b_e_18",
+    "type": "end"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "type": "start",
+    "n": 19
+  },
+  {
+    "opc": "expr",
+    "name": "boolVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": true,
+    "target": "b_m_19"
+  },
+  {
+    "opc": "expr",
+    "name": "boolVar",
+    "expr": "Var"
+  },
+  {
+    "opc": "jump",
+    "conditional": "always",
+    "target": "b_e_19"
+  },
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "label": "b_m_19",
+    "value": true
+  },
+  {
+    "opc": "comment",
+    "text": "Binary",
+    "label": "b_e_19",
+    "type": "end"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "opc": "expr",
+    "name": "boolVar",
+    "expr": "Var"
+  },
+  {
+    "op": "NOT",
+    "opc": "expr",
+    "expr": "Unary"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "value": true
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "opc": "expr",
+    "expr": "BOOL_CONST",
+    "value": false
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "opc": "expr",
+    "expr": "null"
+  },
+  {"opc": "ShowTextAction"},
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "label": "mthd_e_17",
+    "type": "start"
+  },
+  {
+    "opc": "return",
+    "values": false
+  },
+  {
+    "opc": "comment",
+    "text": "createMethodVoid",
+    "type": "end"
+  }
+]}
